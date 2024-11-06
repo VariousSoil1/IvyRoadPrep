@@ -44,6 +44,7 @@ nav ul li a {
   font-size: 1.2em;
   padding: 8px 16px;
   border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
@@ -53,12 +54,13 @@ nav ul li a:hover {
 .hero {
   background: linear-gradient(135deg, #2a3d66, #3b5c8f);
   color: white;
-  padding: 80px 20px;
+  padding: 120px 20px; /* Increased padding to move everything down */
   text-align: center;
 }
 
 .hero h2 {
   font-size: 3em;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .hero p {
@@ -73,7 +75,7 @@ nav ul li a:hover {
   font-size: 1.2em;
   text-decoration: none;
   border-radius: 5px;
-  margin-top: 20px;
+  margin-top: 30px; /* Added margin to space it from the text */
 }
 
 .cta-button:hover {
@@ -105,6 +107,12 @@ nav ul li a:hover {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   width: 30%;
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+  transform: translateY(-10px); /* Lift effect */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .service h3 {
@@ -120,12 +128,13 @@ nav ul li a:hover {
 }
 
 .testimonial {
-  background-color: #fff;
+  background-color: #f9f9f9; /* Slightly different background for contrast */
   padding: 20px;
   margin: 10px 0;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   width: 60%;
+  font-style: italic;
 }
 
 form {
@@ -156,6 +165,8 @@ form button {
   font-size: 1.2em;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 form button:hover {
@@ -166,6 +177,65 @@ footer {
   background-color: #2a3d66;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 20px 10px;
   margin-top: 40px;
+}
+
+footer p {
+  margin-bottom: 10px; /* Small margin for spacing */
+}
+
+footer a {
+  color: #f2b632;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .service-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .testimonial-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial {
+    width: 80%;
+  }
+
+  .cta-button {
+    padding: 12px 24px;
+    font-size: 1.1em;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  .hero h2 {
+    font-size: 2.5em;
+  }
+
+  .hero p {
+    font-size: 1.1em;
+  }
 }
