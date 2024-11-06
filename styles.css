@@ -44,7 +44,6 @@ nav ul li a {
   font-size: 1.2em;
   padding: 8px 16px;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
@@ -54,7 +53,12 @@ nav ul li a:hover {
 .hero {
   background: linear-gradient(135deg, #2a3d66, #3b5c8f);
   color: white;
-  padding: 120px 20px; /* Increased padding to move everything down */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center the content */
+  align-items: center; /* Horizontally center the content */
+  height: 100vh; /* Full viewport height */
+  padding: 0 20px;
   text-align: center;
 }
 
@@ -75,7 +79,7 @@ nav ul li a:hover {
   font-size: 1.2em;
   text-decoration: none;
   border-radius: 5px;
-  margin-top: 30px; /* Added margin to space it from the text */
+  margin-top: 30px; /* Adds space between the text and the button */
 }
 
 .cta-button:hover {
@@ -107,12 +111,6 @@ nav ul li a:hover {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   width: 30%;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.service:hover {
-  transform: translateY(-10px); /* Lift effect */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .service h3 {
@@ -166,7 +164,6 @@ form button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 form button:hover {
