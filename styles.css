@@ -1,238 +1,48 @@
-* {
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f8f8f8;
   color: #333;
+  background-color: #f7f7f7;
 }
 
-header {
-  background-color: #2a3d66;
-  color: white;
-  padding: 20px 0;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-nav .logo h1 {
-  font-size: 2.5em;
-  margin-left: 20px;
-}
-
-nav ul {
-  list-style-type: none;
-  display: flex;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.2em;
-  padding: 8px 16px;
-  border-radius: 5px;
-}
-
-nav ul li a:hover {
-  background-color: #c3c3c3;
-}
-
-.hero {
-  background: linear-gradient(135deg, #2a3d66, #3b5c8f);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Vertically center the content */
-  align-items: center; /* Horizontally center the content */
-  height: 100vh; /* Full viewport height */
-  padding: 0 20px;
-  text-align: center;
-}
-
-.hero h2 {
-  font-size: 3em;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-.hero p {
-  font-size: 1.2em;
-  margin-top: 10px;
-}
-
-.cta-button {
-  background-color: #f2b632;
-  padding: 10px 20px;
-  color: white;
-  font-size: 1.2em;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 30px; /* Adds space between the text and the button */
-}
-
-.cta-button:hover {
-  background-color: #e0a528;
-}
-
-.section {
-  padding: 40px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.section h2 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.service-container {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 30px;
-}
-
-.service {
-  background-color: #fff;
+header, section {
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  width: 30%;
   text-align: center;
 }
 
-.service h3 {
-  font-size: 1.8em;
-  margin-bottom: 10px;
+h1 {
+  font-size: 2.5em;
+  color: #0056b3;
 }
 
-.testimonial-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+h2 {
+  color: #333;
   margin-top: 20px;
 }
 
-.testimonial {
-  background-color: #f9f9f9; /* Slightly different background for contrast */
+#programs, #testimonials {
+  background-color: #e9ecef;
   padding: 20px;
-  margin: 10px 0;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  width: 60%;
+}
+
+.program, .testimonial {
+  margin: 15px 0;
+}
+
+.testimonial p {
   font-style: italic;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-form label {
-  margin-bottom: 10px;
-  font-size: 1.1em;
-}
-
-form input,
-form textarea {
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1em;
-}
-
-form button {
-  padding: 10px 20px;
-  background-color: #2a3d66;
-  color: white;
-  font-size: 1.2em;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-form button:hover {
-  background-color: #1a2b3c;
+  color: #555;
 }
 
 footer {
-  background-color: #2a3d66;
+  background-color: #333;
   color: white;
   text-align: center;
-  padding: 20px 10px;
-  margin-top: 40px;
+  padding: 10px;
 }
 
 footer p {
-  margin-bottom: 10px; /* Small margin for spacing */
-}
-
-footer a {
-  color: #f2b632;
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-.error-message {
-  color: red;
-  font-size: 0.9em;
-  margin-top: 5px;
-}
-
-/* Mobile responsiveness */
-@media screen and (max-width: 768px) {
-  .service-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .service {
-    width: 80%;
-    margin-bottom: 20px;
-  }
-
-  .testimonial-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .testimonial {
-    width: 80%;
-  }
-
-  .cta-button {
-    padding: 12px 24px;
-    font-size: 1.1em;
-  }
-
-  form {
-    width: 90%;
-  }
-
-  .hero h2 {
-    font-size: 2.5em;
-  }
-
-  .hero p {
-    font-size: 1.1em;
-  }
+  margin: 0;
 }
